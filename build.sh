@@ -6,8 +6,7 @@ test -d build_android && rm -rf build_android
 #cmake --preset ci-ninja-android-release
 #cmake --build build_android
 
-unset ANDROID_API_VERSION
-export ANDROID_PLATFORM=android-28
+./android-platform-manager.sh profile-load CMakeQtAPK
 
 # 1) Configurar (gera build_android)
 cmake --preset ci-ninja-android-release
