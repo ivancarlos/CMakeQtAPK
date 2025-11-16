@@ -1,7 +1,19 @@
 #!/usr/bin/env bash
 
+test -d build_android && rm -rf build_android
+
+# .so
+#cmake --preset ci-ninja-android-release
+#cmake --build build_android
+
+unset ANDROID_API_VERSION
+export ANDROID_PLATFORM=android-28
+
+# 1) Configurar (gera build_android)
 cmake --preset ci-ninja-android-release
-cmake --build build_android
+
+# 2) Construir o alvo 'apk'
+cmake --build build_android --target apk
 
 exit 0
 
