@@ -22,7 +22,7 @@
             "toolchainFile": "/home/ivan/Android/Sdk/ndk/android-ndk-r20b/build/cmake/android.toolchain.cmake",
             "cacheVariables": {
                 "ANDROID_ABI": "armeabi-v7a",
-                "ANDROID_PLATFORM": "23",
+                "ANDROID_PLATFORM": "28",
                 "ANDROID_SDK": "/home/ivan/Android/Sdk",
                 "ANDROID_BUILD_ABI_armeabi-v7a": "ON"
             },
