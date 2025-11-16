@@ -1,5 +1,11 @@
 cmake_minimum_required(VERSION 3.21)
 
+# ----------------------------------------
+# Opções de build para debug
+# ----------------------------------------
+set(CMAKE_VERBOSE_MAKEFILE ON)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 project(
   CMakeQtAPKExample
   VERSION 1.0
